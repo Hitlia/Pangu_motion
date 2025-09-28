@@ -65,13 +65,13 @@ def get_pangu_model_args():
 def get_pangu_data_args(cur_proj): 
     data_args = {
         # 数据路径
-        'root_path':            Path('/data/lxy/weather/pangu_motion/'),
-        'npy_path':             Path('/data/lhy/data/npy-data/'),
-        'tp6hr_path':           Path('/data/lhy/data/tp6hr-data/'),
+        'root_path':            Path('/pangu_motion/'),
+        'npy_path':             Path('/npy-data/'),
+        'tp6hr_path':           Path('/tp6hr-data/'),
 
         # norm
-        'norm_path':            f"/data/lxy/weather/dataset/norms/norms.npy",
-        'diff_path':            f"/data/lxy/weather/dataset/norms/diff.npy",
+        'norm_path':            f"/dataset/norms/norms.npy",
+        'diff_path':            f"/dataset/norms/diff.npy",
 
         # log
         'train_log_path':       f"output/{cur_proj}/logs/pangu_train.log",
